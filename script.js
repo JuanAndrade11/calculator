@@ -4,7 +4,7 @@ function add(a, b) {
     return a + b;
 }
 
-function substract(a, b) {
+function subtract(a, b) {
     return a - b;
 }
 
@@ -13,5 +13,18 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
+    if (b === 0) {
+        throw new Error('Cannot divide by zero');
+    }
     return a / b;
+}
+
+function operate(a, b, operator) {
+    switch (operator) {
+        case '+': return add(a, b);
+        case '-': return subtract(a, b);
+        case '*': return multiply(a, b);
+        case '/': return divide(a, b);
+        default: throw new Error('Unsupported operator');
+    }
 }
