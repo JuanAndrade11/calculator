@@ -1,4 +1,4 @@
-let numA, numB, operator;
+let numA = 0, numB = 0, operator = '+', display = '';
 
 function add(a, b) {
     return a + b;

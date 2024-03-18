@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     text-align: center;
     background-color: brown;
@@ -33,6 +38,6 @@ body {
     width: 100px;
 }
 
-#0 {
-    width: 200px;
+#wider {
+    width: 230px;
 }
