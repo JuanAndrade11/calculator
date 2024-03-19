@@ -1,4 +1,4 @@
-let numA = 0, numB = 0, operator = '+'
+let numA = '', numB = '', operator = ''
 let numbers = '0123456789';
 
 const display = document.querySelector('.display');
@@ -74,7 +74,7 @@ function addDecimal(text) {
 function displayText(text) {
     if (numbers.includes(text)) {
         display.textContent === '0' ? display.textContent = text : addText(text);
-    } else if (text === '.' ) {
+    } else if (text === '.') {
         addDecimal(text);
     } else if (text === '+/-') {
         if (display.textContent !== '0') {
